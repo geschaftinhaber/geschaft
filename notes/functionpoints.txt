@@ -1,0 +1,51 @@
+Create a webshop
+
+
+Definitions:
+Webshop : A shop belongs to shop owner and it is available online and is able to do following
+    1. List it's own products.
+    2. Shows Offers on products (Offers are valid for certain time or till all the products are out of stock).
+    3. Allow users to search for specific products.
+    4. Users can select product and add to cart.
+    6. Users can pay for the products through multiple payment methods.
+    7. Product is shipped to the users.
+
+
+Shop owner: Person who owns the shop.
+
+User: Buyer.
+
+Product: Products could be physical or services offered on the shop.
+
+Cart: Temporary list of items selected by user, this list is used for checkout.
+
+Checkout: Process of paying for the selected items with one of the supplied payment methods.
+
+Payment methods: A mechanism with which a user pays for the items on the shop. Payment is integral part of checkout
+    without payment checkout is not completed.
+
+Shipping: Usually this is to be taken care by the shopowner but we can provide
+    an integration with available shipping vendors, just like payment methods. [ Future release#2 ]
+
+
+-------------------------------------------------------------------------------------------------------
+
+Shop:
+
+Actions => outcome:
+1. View product(s) => null
+2. Add-to-cart => cart has the product
+3. payment => execute one of the selected payment methods if successful execute step 4
+4. checkout => order placed in the system
+
+
+-------------------------------------------------------------------------------------------------------
+
+Admin:
+
+Actions => outcome:
+1. CRUD-product => CRUD-product in the list of products
+2. CRUD-payment-methods => CRUD-payments in the list of payments
+3.
+
+-------------------------------------------------------------------------------------------------------

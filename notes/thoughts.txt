@@ -1,0 +1,4 @@
+Idea to use redux in backend because everything can be explained in terms of
+    single source of truth => store,
+    some action => dispatch action,
+    calculate data and modify store => reducer
